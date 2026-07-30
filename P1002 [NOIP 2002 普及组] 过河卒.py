@@ -19,8 +19,6 @@ def shuru():
         kong_x.append(a2)
         kong_y.append(b2)
     return kong_x, kong_y, n, m
-
-
 def shuanfa(kong_x, kong_y, n, m):
     blocked = set()
     for x, y in zip(kong_x, kong_y):
