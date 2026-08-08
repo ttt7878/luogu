@@ -11,9 +11,13 @@ def shuan(n,r):
     while n1 != 0:
         yu = n1 % r
         zheng = n1 // r
-        if n1 % r <= -1:
-            yu = n1 % r - r
-            zheng = n1 // r +1
+        if yu < 0:
+            if r > 0:
+                yu = n1 % r + abs(r)
+                zheng = n1 // r - 1
+            else:
+                yu = n1 % r + abs(r)
+                zheng = n1 // r + 1
         end.append(zuan(yu))
         n1 = zheng
     return ''.join(end[::-1])
