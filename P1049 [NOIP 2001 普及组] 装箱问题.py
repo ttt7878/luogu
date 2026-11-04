@@ -9,3 +9,5 @@ def main():
     print(v - max(V))
 if __name__ == "__main__":
     main()
+
+    
